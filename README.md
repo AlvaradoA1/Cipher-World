@@ -1,2 +1,2 @@
 # CryptogNYUHack
-Daneil James Rey and Andres win hacknyu2023
+Daniel James Rey and Andres win hacknyu2023
