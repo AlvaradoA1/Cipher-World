@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <style>
+        #sentence {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            width: fit-content;
+
+        }
+        p {
+            color:rgb(240, 240, 240); 
+            font-family: sans-serif;
+            margin-right:17.5%; 
+            margin-left:17.5%; 
+            font-size:125%
+        }
+        .button {
+            text-align: center;
+        }
+      
+    </style>
+</head>
+<body style="background-color:rgb(30,30,30);">
+    <h1 style= 'color:rgb(240, 240, 240);font-family: sans-serif;'><center>CipherWorld<center></h1>
+        <hr>
+        <p>Welcome to CipherWorld, here you will have the opportunity to engage your critical and logical thinking skills. This will be an excellent introduction to the science of cryptography through a simpler subsection called cryptograms. </p>
+        <p>
+What exactly is this all about?
+</p>
+<p>
+In the world of secret messages, there are 3 main categories which can fall into:
+Cryptography: the study of protecting/creating communications through the use of codes, so that only intended recipients can read and understand such messages. 
+</p>
+<p>
+Cryptology: the study of codes, in both encryption and decryption.
+</p>
+<p>
+Cryptanalysis: the study of solving such coded messages, or breaking codes, when you are not the intended recipient
+You will be playing the role of Cryptanalyst.
+</p>
+<p>
+In this website, we will feature cryptograms, which are short puzzles that consist of a few encrypted, or encoded, phrases. There are simple substitution ciphers where letters are replaced by a different letter according to a randomized key. In order to solve the puzzle, cryptanalysts must recover the original letters of the encrypted message. 
+</p>
+<p>
+    <div style="background-color:rgb(30,30,30);" id="sentence"></div>
+    <!--  <p id="guess"></p>  -->
+    <div class = 'button'>
+     <a href="caesar.html">
+        <button id="aaesar_Cipher">Caesar Cipher</button> 
+        
+    </a>
+    
+    <a href="atbash.html">
+    <button id="atbash_Cipher">Atbash Cipher</button>
+     </a>
+    
+     <a href="aristocrat.html">
+    <button id="aristocrat_Cipher">Aristocrat Cipher</button>
+     </a>
+
+     <a href="patristocrat.html">
+    <button id="patristocrat_Cipher">Patristocrat Cipher</button>
+     </a>
+    </div>
+</body>
+</html>

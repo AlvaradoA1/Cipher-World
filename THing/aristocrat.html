@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hangman</title>
+    <style>
+        #sentence {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            width: fit-content;
+
+        }
+
+        .square {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 4px solid rgb(50,50,50);
+            border-radius: 25%;
+            margin: 0.05;
+            margin-top: 1%;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 100%;
+            margin-bottom: 1%;
+            color: rgb(240, 240, 240);
+        }
+        .button {
+            text-align: center;
+        }
+      
+    </style>
+</head>
+<body style="background-color:rgb(30,30,30);">
+    <h1 style= 'color:rgb(240, 240, 240);font-family: sans-serif;'><center>Aristocrat Cipher<center></h1>
+    <div style="background-color:rgb(30,30,30);" id="sentence"></div>
+    <!--  <p id="guess"></p>  -->
+    <div class = "button">
+    <button id="reset">Reset</button> 
+    <button id="new_word">Next</button>
+    <button id="Check_answer">Check</button>
+   <a href="homepage.html">
+    <button id="Homepage">Homepage</button> 
+    </a>
+    </div>
+    <script src="aristocrat.js"></script>
+        <script ></script>
+</body>
+</html>
