@@ -301,7 +301,7 @@ function updateSquares() {
 
     for (let i = 0; i < squares.length; i++) {
         if(!(guessedLetters[i]==undefined) && !(code[i]==" "))
-            squares[i].textContent = guessedLetters[i]+"|" +code[i] ;
+            squares[i].textContent = guessedLetters[i]+"\u27B5" +code[i] ;
     }
 }
 

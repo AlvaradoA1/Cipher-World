@@ -36,6 +36,61 @@
         .button {
             text-align: center;
         }
+
+    
+        .popup {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          color: rgb(240,240,240);
+
+        }
+
+     
+        .popup .popuptext {
+          visibility: hidden;
+          width: 250px;
+          background-color: #555;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 8px 0;
+          position: absolute;
+          z-index: 1;
+          bottom: -800%;
+          left: 50%;
+          margin-left: -10px;
+          margin-top: 10px;
+        }
+
+        .popup .popuptext::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: #555 transparent transparent transparent;
+        }
+
+       
+        .popup .show {
+          visibility: visible;
+          -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s
+        }
+
+     
+        @-webkit-keyframes fadeIn {
+          from {opacity: 0;}
+          to {opacity: 1;}
+        }
+
+        @keyframes fadeIn {
+          from {opacity: 0;}
+          to {opacity:1 ;}
+        }
       
     </style>
 </head>
@@ -51,7 +106,25 @@
     <button id="Homepage">Homepage</button> 
     </a>
     </div>
+ <div class="popup" onclick="myFunction()">Hint!
+      <span class="popuptext" id="myPopup">
+Hints:
+The most common letters in English words are e, t, a, i, o , n ,s h in that order.
+Look at the frequency of each letter to make an educated guess on what the key might be!
+Look for common letter patterns with letters of high frequency, such as “that”, which uses the letter pattern ‘xyzx, and has multiple high frequency letters!
+
+</span>
+</div>
+<center><p style= 'color:rgb(210, 180, 140)'>
+The Aristocrat cipher is one of the oldest types of simple substitution ciphers, where each letter of the alphabet is replaced by another letter random letter in the alphabet. Unlike the Caesar cipher which has a set shift, each letter has a random pairing. It is important to note that each letter is substituted by a unique ciphertext, so not more than one letter can be paired with another, which would make the cipher much more complicated to break. As an example, the letter ‘K’ can be paired with the encoded letter “Z.,” amd that will be the only letter paired with “Z”.
+You are provided with a frequency table, which denotes the frequency, or amount of times each letter shows up in the original message. Use these to your advantage!
+
+</p></center>
+
     <script src="aristocrat.js"></script>
-        <script ></script>
+        <script >function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}</script>
 </body>
 </html>
