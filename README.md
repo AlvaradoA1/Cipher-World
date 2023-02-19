@@ -1,2 +1,2 @@
-# CryptogNYUHack
-Daniel James Rey and Andres win hacknyu2023
+# Cipher World HackNYU
+Daniel, James, Reynaldo and, Andres!
