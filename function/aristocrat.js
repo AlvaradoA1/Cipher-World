@@ -30,5 +30,3 @@ function letterCount(rightGuessString){
     var result = [...rightGuessString].reduce((alphabets, i) => { alphabets[i] = alphabets[i] ? alphabets[i] + 1 : 1; return alphabets }, {});
     return result
 }
-console.log(aristocrat("YO. WHAT IS UP MY BOYS?"));
-console.log(letterCount(aristocrat("YO. WHAT IS UP MY BOYS?")));
